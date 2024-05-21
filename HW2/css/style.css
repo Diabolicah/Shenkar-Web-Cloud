@@ -3,20 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 header, nav, main, aside, section, article, footer, div {
     display: block;
 }
-
 a {
     text-decoration: none;
     cursor: pointer;
 }
-
 body{
     background-color: #FFF;
 }
-
 /* Header */
 header {
     display: flex;
@@ -25,11 +21,9 @@ header {
     padding: 32px 120px 32px 32px;
     height: 128px;
 }
-
 #logo {
     display: flex;
 }
-
 #logo {
     display: flex;
     align-items: center;
@@ -38,7 +32,6 @@ header {
     background-size: contain;
     height: 64px;
 }
-
 #logo span {
     text-transform: uppercase;
     color: #3E3F43;
@@ -50,13 +43,11 @@ header {
     letter-spacing: 6px;
     margin-left: 64px;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 nav a {
     color: #612999;
     font-family: Nunito;
@@ -66,15 +57,12 @@ nav a {
     line-height: normal;
     margin-left: 64px;
 }
-
 nav a:hover {
     font-weight: 600;
 }
-
 nav a.main_nav_selected {
     font-weight: 700;
 }
-
 /* Footer */
 footer {
     display: flex;
@@ -85,14 +73,12 @@ footer {
     padding: 32px;
     height: 287px;
 }
-
 .footer_item {
     display: flex;
     flex-direction: column;
     width: 280px;
     height: 255px;
 }
-
 .footer_item > h3 {
     color: #333;
     font-family: Nunito;
@@ -103,7 +89,6 @@ footer {
     text-transform: uppercase;
     margin-bottom: 16px;
 }
-
 .footer_item > a {
     color: #333;
     font-family: Nunito;
@@ -113,15 +98,12 @@ footer {
     line-height: normal;
     margin-bottom: 8px;
 }
-
 .footer_item .footer_icon_links {
     margin: 16px 0px;
 }
-
 .footer_item .footer_icon_links a:not(:last-child) {
     margin-right: 24px;
 }
-
 .footer_item span {
     color: #333;
     font-family: Nunito;
@@ -130,7 +112,6 @@ footer {
     font-weight: 600;
     line-height: normal;
 }
-
 /* Main */
 .main_background_image {
     background-image: url('../images/MainPage-Background-Image.jpg');
@@ -144,25 +125,21 @@ footer {
     line-height: normal;
     padding: 32px 0px 0px 32px;
 }
-
 .main_background_image h1 {
     color: #612999;
     font-size: 96px;
     font-weight: 800;
     width: 448px;
 }
-
 .main_background_image p {
     color: #000;
     font-size: 24px;
     font-weight: 600;
     width: 448px;
 }
-
 #wrapper {
     margin: 32px;
 }
-
 .about_section h2 {
     color: #612999;
     font-family: Rubik;
@@ -172,7 +149,6 @@ footer {
     line-height: 40px;
     margin-bottom: 32px;
 }
-
 .about_section p {
     color: #000;
     text-align: justify;
@@ -184,7 +160,6 @@ footer {
     margin-bottom: 24px;
     margin-right: 32px;
 }
-
 #wrapper h2 {
     color: #612999;
     font-family: Rubik;
@@ -194,12 +169,10 @@ footer {
     line-height: 40px;
     margin: 32px 0px;
 }
-
 .card_container {
     display: flex;
     flex-wrap: wrap;
 }
-
 .manga_card {
     border-radius: 38px;
     background: #EFECFF;
@@ -208,16 +181,13 @@ footer {
     height: 496px;
     margin: 0px 32px 32px 0px;
 }
-
 .manga_card img {
     margin-bottom: 21px;
     border-radius: 38px;
 }
-
 .card_details {
     margin: 0px 32px;
 }
-
 .manga_card h3 {
     color: #000;
     text-align: justify;
@@ -228,7 +198,6 @@ footer {
     line-height: normal;
     margin-bottom: 7px;
 }
-
 .manga_card p {
     color: #333;
     font-family: Abel;
@@ -238,7 +207,6 @@ footer {
     line-height: normal;
     margin-bottom: 32px;
 }
-
 .manga_card h4 {
     color: #612999;
     text-align: justify;
@@ -248,7 +216,6 @@ footer {
     font-weight: 400;
     line-height: normal;
 }
-
 .heart_icon {
     background-color: #EFECFF;
     background-image: url('../images/heart_icon.svg');
@@ -262,7 +229,6 @@ footer {
     height: 47px;
     cursor: pointer;
 }
-
 .shopping_basket_icon {
     background-color: #612999;
     background-image: url('../images/shopping_basket_icon.svg');
@@ -276,21 +242,17 @@ footer {
     height: 63px;
     cursor: pointer;
 }
-
 /* MangaPage */
 .image_container {
     display: flex;
 }
-
 .image_container img {
     border: 4px solid #E6DBFE;
     margin-right: 32px;
 }
-
 #wrapper ul {
     list-style-type: none;
 }
-
 #wrapper ul li {
     display: flex;
     align-items: center;
@@ -302,7 +264,6 @@ footer {
     line-height: 14px;
     margin-bottom: 16px;
 }
-
 .rocket_icon {
     background-color: #612999;
     background-image: url('../images/Rocket-Icon.svg');
@@ -314,7 +275,6 @@ footer {
     backdrop-filter: blur(10px);
     margin-right: 16px;
 }
-
 .contact_form {
     background-color: #EFECFF;
     height: 503px;
@@ -325,18 +285,15 @@ footer {
     box-shadow: 0px 6px 40px 0px rgba(57, 132, 187, 0.05);
     max-width: 600px;
 }
-
 .contact_form .form_item {
     margin-bottom: 15px;
 }
-
 .contact_form .form_item label {
     color: #612999;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 8px;
 }
-
 .contact_form .form_item input {
     background-color: #FFF;
     border: 1px solid #E6DBFE;
@@ -347,9 +304,9 @@ footer {
     padding: 8px;
     width: 100%;
 }
-
 .contact_form .form_item:last-child input {
     background-color: #612999;
     border: none;
     color: #FFF;
+    cursor: pointer;
 }
