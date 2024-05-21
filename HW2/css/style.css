@@ -131,7 +131,7 @@ footer {
 }
 
 /* Main */
-.Main_Background_Image {
+.main_background_image {
     background-image: url('../images/MainPage-Background-Image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,7 +144,7 @@ footer {
     line-height: normal;
 }
 
-.Main_Background_Image h1 {
+.main_background_image h1 {
     color: #612999;
     font-size: 96px;
     font-weight: 800;
@@ -153,7 +153,7 @@ footer {
     padding-top: 32px;
 }
 
-.Main_Background_Image p {
+.main_background_image p {
     color: #000;
     font-size: 24px;
     font-weight: 600;
@@ -165,7 +165,7 @@ footer {
     margin: 32px;
 }
 
-.about h2 {
+.about_section h2 {
     color: #612999;
     font-family: Rubik;
     font-size: 40px;
@@ -175,7 +175,7 @@ footer {
     margin-bottom: 32px;
 }
 
-.about p {
+.about_section p {
     color: #000;
     text-align: justify;
     font-family: Rubik;
