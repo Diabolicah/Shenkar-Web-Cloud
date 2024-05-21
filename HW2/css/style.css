@@ -17,6 +17,7 @@ body{
     background-color: #FFF;
 }
 
+/* Header */
 header {
     display: flex;
     align-items: center;
@@ -72,4 +73,59 @@ header {
 
 #main_nav a.main_nav_selected {
     font-weight: 700;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: flex-start;
+    background: #EFECFF;
+    position: sticky;
+    bottom: 0;
+    padding: 32px;
+}
+
+.footer_item {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 255px;
+}
+
+.footer_item > h3 {
+    color: #333;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.footer_item > a {
+    color: #333;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+
+.footer_item .footer_icon_links {
+    margin: 16px 0px;
+}
+
+.footer_item .footer_icon_links a {
+    margin-right: 24px;
+}
+
+.footer_item span {
+    color: #333;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
