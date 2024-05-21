@@ -51,13 +51,13 @@ header {
     margin-left: 64px;
 }
 
-#main_nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#main_nav a {
+nav a {
     color: #612999;
     font-family: Nunito;
     font-size: 30px;
@@ -67,11 +67,11 @@ header {
     margin-left: 64px;
 }
 
-#main_nav a:hover {
+nav a:hover {
     font-weight: 600;
 }
 
-#main_nav a.main_nav_selected {
+nav a.main_nav_selected {
     font-weight: 700;
 }
 
@@ -128,4 +128,35 @@ footer {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+/* Main */
+.Main_Background_Image {
+    background-image: url('../images/MainPage-Background-Image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+
+    font-family: Nunito;
+    font-style: normal;
+    line-height: normal;
+}
+
+.Main_Background_Image h1 {
+    color: #612999;
+    font-size: 96px;
+    font-weight: 800;
+    width: 448px;
+    padding-left: 32px;
+    padding-top: 32px;
+}
+
+.Main_Background_Image p {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    width: 448px;
+    padding-left: 32px;
 }
