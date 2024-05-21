@@ -138,10 +138,10 @@ footer {
     background-position: center;
     width: 100%;
     height: 800px;
-
     font-family: Nunito;
     font-style: normal;
     line-height: normal;
+    padding: 32px 0px 0px 32px;
 }
 
 .main_background_image h1 {
@@ -149,8 +149,6 @@ footer {
     font-size: 96px;
     font-weight: 800;
     width: 448px;
-    padding-left: 32px;
-    padding-top: 32px;
 }
 
 .main_background_image p {
@@ -158,7 +156,6 @@ footer {
     font-size: 24px;
     font-weight: 600;
     width: 448px;
-    padding-left: 32px;
 }
 
 #wrapper {
@@ -276,4 +273,14 @@ footer {
     width: 63px;
     height: 63px;
     cursor: pointer;
+}
+
+/* MangaPage */
+.image_container {
+    display: flex;
+}
+
+.image_container img {
+    border: 4px solid #E6DBFE;
+    margin-right: 32px;
 }
