@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer, nav, aside, section, article, div {
+    display: block;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bbb;
+    color: black;
+    height: 100px;
+    padding: 0px 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+header div:not(:nth-child(3)) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+header div:not(:nth-child(3)):hover {
+    background-color: rgb(143, 140, 140);
+}
+
+#lettersTextInput {
+    height: 25px;
+    padding: 5px;
+}
+
+#lettersTextButton {
+    cursor: pointer;
+    padding: 10px;
+}
+
+#switchRectanglesSongs {
+    width: 200px;
+}
+
+#wrapper {
+    display: flex;
+    width: 1000px;
+    min-height: calc(100vh - 100px);
+    background-color: black;
+    margin: 0 auto;
+}
+
+#rectanglesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.rectangle {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 10px 0 10px;
+}
+
+#songsContainer {
+    display: none;
+    color: white;
+    width: 100%;
+}
+
+#songsContainer h1 {
+    padding: 12px;
+    text-align: center;
+    margin: 0px auto;
+    font-size: 32px;
+}
+
+#songsList {
+    padding-left: 30px;
+    list-style-type: none;
+}
+
+#songsList li {
+    padding: 12px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
