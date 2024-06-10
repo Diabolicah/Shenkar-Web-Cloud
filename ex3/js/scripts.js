@@ -5,6 +5,21 @@ let isOnRectangles = true;
 
 let rectanglesContainer, songsContainer, switchRectanglesSongsButton, lettersTextInput, lettersTextButton;
 
+function chooseRectangleColor() {
+    return colorsArray[currentRectangleIndex % colorsArray.length];
+}
+
+function addRectangle() {
+    if (!isOnRectangles) return;
+    currentRectangleIndex++;
+    const rectangle = document.createElement("div");
+    rectangle.id = "rectangle" + currentRectangleIndex;
+    rectangle.className = "rectangle";
+    rectangle.innerHTML = text[currentRectangleIndex % text.length];
+    rectangle.style.backgroundColor = chooseRectangleColor();
+    rectanglesContainer.appendChild(rectangle);
+}
+
 function initRectangles() {
     currentRectangleIndex = -1;
     rectanglesContainer.innerHTML = "";
@@ -12,6 +27,14 @@ function initRectangles() {
     for (let i = 0; i < text.length; i++) {
         addRectangle();
     }
+}
+
+function populateSongsInList(songsList, object) {
+    songsList.forEach(song => {
+        const songItem = document.createElement("li");
+        songItem.textContent = `${song.id}. ${song.artist} - ${song.name}`;
+        object.appendChild(songItem);
+    });
 }
 
 function initSongs() {
@@ -28,21 +51,6 @@ function initSongs() {
         songsTitle.innerHTML = data.title;
         populateSongsInList(data.songs, songsList);
     });
-}
-
-function chooseRectangleColor() {
-    return colorsArray[currentRectangleIndex % colorsArray.length];
-}
-
-function addRectangle() {
-    if (!isOnRectangles) return;
-    currentRectangleIndex++;
-    const rectangle = document.createElement("div");
-    rectangle.id = "rectangle" + currentRectangleIndex;
-    rectangle.className = "rectangle";
-    rectangle.innerHTML = text[currentRectangleIndex % text.length];
-    rectangle.style.backgroundColor = chooseRectangleColor();
-    rectanglesContainer.appendChild(rectangle);
 }
 
 function subtractRectangle() {
@@ -65,17 +73,9 @@ function switchRectanglesSongs() {
     }
 }
 
-function populateSongsInList(songsList, object) {
-    songsList.forEach(song => {
-        const songItem = document.createElement("li");
-        songItem.textContent = `${song.id}. ${song.artist} - ${song.name}`;
-        object.appendChild(songItem);
-    });
-}
-
 function changeText() {
     if (!isOnRectangles) return;
-    text = lettersTextInput.value;
+    text = lettersTextInput.value.trim().replace(/\s+/g, '');
     if (text.length === 0) return;
     initRectangles();
     lettersTextInput.disabled = true;
