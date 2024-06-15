@@ -1,8 +1,7 @@
-let text = "JuanElias";
+let textString = "JuanElias";
 let currentRectangleIndex = -1;
 const colorsArray = ["#FFC0CB", "#FF69B4", "#FF1493", "#DB7093", "#C71585", "#FFA07A"];
 let isOnRectangles = true;
-
 let rectanglesContainer, songsContainer, switchRectanglesSongsButton, lettersTextInput, lettersTextButton;
 
 function chooseRectangleColor() {
@@ -15,7 +14,7 @@ function addRectangle() {
     const rectangle = document.createElement("div");
     rectangle.id = "rectangle" + currentRectangleIndex;
     rectangle.className = "rectangle";
-    rectangle.innerHTML = text[currentRectangleIndex % text.length];
+    rectangle.innerHTML = textString[currentRectangleIndex % textString.length];
     rectangle.style.backgroundColor = chooseRectangleColor();
     rectanglesContainer.appendChild(rectangle);
 }
@@ -23,8 +22,7 @@ function addRectangle() {
 function initRectangles() {
     currentRectangleIndex = -1;
     rectanglesContainer.innerHTML = "";
-
-    for (let i = 0; i < text.length; i++) {
+    for (let i = 0; i < textString.length; i++) {
         addRectangle();
     }
 }
@@ -75,8 +73,8 @@ function switchRectanglesSongs() {
 
 function changeText() {
     if (!isOnRectangles) return;
-    text = lettersTextInput.value.trim().replace(/\s+/g, '');
-    if (text.length === 0) return;
+    textString = lettersTextInput.value.trim().replace(/\s+/g, '');
+    if (textString.length === 0) return;
     initRectangles();
     lettersTextInput.disabled = true;
     lettersTextButton.disabled = true;
