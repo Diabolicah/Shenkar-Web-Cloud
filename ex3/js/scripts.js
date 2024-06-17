@@ -1,4 +1,4 @@
-let textString = "JuanElias";
+let textString = "";
 let currentRectangleIndex = -1;
 const colorsArray = ["#FFC0CB", "#FF69B4", "#FF1493", "#DB7093", "#C71585", "#FFA07A"];
 let isOnRectangles = true;
@@ -10,6 +10,7 @@ function chooseRectangleColor() {
 
 function addRectangle() {
     if (!isOnRectangles) return;
+    if (textString.length <= 0) return;
     currentRectangleIndex++;
     const rectangle = document.createElement("div");
     rectangle.id = "rectangle" + currentRectangleIndex;
@@ -53,6 +54,7 @@ function initSongs() {
 
 function subtractRectangle() {
     if (!isOnRectangles) return;
+    if (textString.length <= 0) return;
     if (currentRectangleIndex < 0)  return;
     const rectangle = document.getElementById("rectangle" + currentRectangleIndex);
     rectangle.remove();
@@ -60,6 +62,7 @@ function subtractRectangle() {
 }
 
 function switchRectanglesSongs() {
+    if (textString.length <= 0) return;
     isOnRectangles = !isOnRectangles;
     switchRectanglesSongsButton.innerHTML = isOnRectangles ? "Switch to songs" : "Switch to rectangles";
     if (isOnRectangles) {
@@ -87,7 +90,6 @@ window.onload = () => {
     lettersTextInput = document.getElementById("lettersTextInput");
     lettersTextButton = document.getElementById("lettersTextButton");
 
-    initRectangles();
     initSongs();
 
     document.getElementById("addRectangle").onclick = addRectangle;
